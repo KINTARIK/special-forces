@@ -1,0 +1,220 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+  }
+
+.header {
+    background-image: url("../img/Фон.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.nav {
+    padding: 26px 0;
+    background-color: #03013a;
+}
+
+.container-nav {
+    display: flex;
+    gap: 197px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.nav-link:hover {
+    color: #d2ab67;
+    transition: color .3s;
+}
+
+.nav-link:active {
+    text-decoration: underline;
+    text-decoration-color: #d2ab67;
+}
+
+.nav-tel {
+    background-image: url("../img/Телефон.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+
+.basic-information {
+    display: flex;
+    flex-direction: column;
+    gap: 335px;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 75px;
+    color: #d2ab67;
+    text-align: center;
+}
+
+.sections {
+    padding: 100px 0;
+    background-color: #000000;
+    
+}
+
+.section {
+    border: 5px solid #d2ab67;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #ccc;
+    margin-bottom: 100px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.main-info-section {
+    display: flex;
+    gap: 20px;
+}
+
+.main-info-section-task {
+    flex-direction: column;
+}
+
+.main-info-section-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 87px;
+}
+
+.main-info-section-task-slider-buttons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.main-info-section-preparation-slider-video {
+    border-radius: 30px;
+    width: 440px;
+    height: 211px;
+}
+
+.button {
+    border: 2px solid #d2ab67;
+    border-radius: 20px;
+    background: #fff;
+    transition: background .3s ;
+}
+
+.button:hover {
+    background: #c9c9c9;
+    transition: background .3s ;
+}
+
+.button-active {
+    background: #d2ab67;
+}
+
+.button-slider-task {
+    width: 40px;
+    height: 40px;
+}
+
+.button-slider-preparation {
+    width: 20px;
+    height: 20px;
+}
+
+.main-info-section-connection {
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    gap: 92px;
+    border-radius: 30px;
+    padding: 30px 20px;
+    background: #fff;
+}
+
+.inputs {
+    display: flex;
+    gap: 50px;
+}
+
+.title-form {
+    font-size: 15px;
+}
+
+.text-input {
+    border: none;
+}
+
+.input-form-flag-chose {
+    display: flex;
+}
+
+.input-form-flag-chose-flag {
+    display: flex;
+}
+
+.button-form {
+    font-size: 20px;
+    color: #c93;
+    border: 1px solid #c93;
+    border-radius: 10px;
+    padding: 13px 30px;
+}
+
+.footer {
+    background-color: #03013a;
+}
+
+.container-footer {
+    padding: 20px 0;
+    display: flex;
+    gap: 129px;
+}
+
+.title-footer {
+    text-align: left;
+    font-size: 55px;
+    color: #fff;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
