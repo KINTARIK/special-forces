@@ -81,10 +81,21 @@ body {
     text-align: center;
 }
 
+@keyframes movingBackground {
+    0% {
+        background-position: 0 0; /* Изначальная позиция */
+    }
+    100% {
+        background-position: -100px 0; /* Конечная позиция (сдвиг на 100% горизонтально) */
+    }
+}
+
 .sections {
     padding: 100px 0;
-    background-color: #000000;
-    
+    background: url('../img/Спецподразделение фон.png') repeat-x, #000000; /* Используем repeat-x для повторения горизонтально */
+    animation: movingBackground 5s linear infinite;
+    animation-direction: alternate; /* Применяем анимацию к фону */
+    background-size: cover;
 }
 
 .section {
@@ -104,6 +115,14 @@ body {
 .main-info-section {
     display: flex;
     gap: 20px;
+}
+
+.img-main-info-section-none {
+    display: none;
+}
+
+.main-info-section-preparation-slider-video-none {
+    display: none;
 }
 
 .main-info-section-task {

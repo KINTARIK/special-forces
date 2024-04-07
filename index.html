@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="js/script.js"></script>
     <title>Специальное подразделение</title>
 </head>
 <body>
@@ -15,22 +16,21 @@
         <nav class="nav">
             <div class="container container-nav">
                 <div class="nav-links">
-                    <a href="#" class="nav-link text">
+                    <a href="#about" class="nav-link text">
                         О спецподразделение
                     </a>
-                    <a href="#" class="nav-link text">
+                    <a href="#tasks" class="nav-link text">
                         Задачи спецподразделения
                     </a>
-                    <a href="#" class="nav-link text">
+                    <a href="#training" class="nav-link text">
                         Подготовка сотрудников
                     </a>
-                    <a href="#" class="nav-link text">
+                    <a href="#feedback" class="nav-link text">
                         Обратная связь
                     </a>
                 </div>
                 <a href="tel::+79999999999" class="nav-link nav-tel text">+7 999 999 99 99</a>
             </div>
-                
         </nav>
         <div class="container">
             <div class="basic-information">
@@ -45,7 +45,7 @@
     </header>
     <div class="sections">
         <div class="container">
-            <section class="section">
+            <section class="section" id="about">
                 <h2 class="subtitle">
                     О специальном подразделение
                 </h2>
@@ -62,7 +62,7 @@
                     <img class="img-main-info-section" src="img/О специальном подразделении.png" alt="О специальном подразделении">
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="tasks">
                 <h2 class="subtitle">
                     Задачи спецподразделения
                 </h2>
@@ -127,21 +127,18 @@
                     </div>
                     <div class="main-info-section-slider">
                         <img class="img-main-info-section" src="img/Задачи1.png" alt="О специальном подразделении">
+                        <img class="img-main-info-section img-main-info-section-none" src="img/Задачи2.png" alt="О специальном подразделении">
+                        <img class="img-main-info-section img-main-info-section-none" src="img/Задачи3.png" alt="О специальном подразделении">
+
                         <div class="main-info-section-task-slider-buttons">
-                            <button class="button button-active button-slider-task">
-
-                            </button>
-                            <button class="button button-slider-task">
-
-                            </button>
-                            <button class="button button-slider-task">
-
-                            </button>
+                            <button class="button button-active button-slider-task"></button>
+                            <button class="button button-slider-task"></button>
+                            <button class="button button-slider-task"></button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="training">
                 <h2 class="subtitle">
                     Подготовка сотрудников
                 </h2>
@@ -173,6 +170,8 @@
                     </div>
                     <div class="main-info-section-slider">
                         <iframe class="main-info-section-preparation-slider-video" src="https://vk.com/video_ext.php?oid=-201733279&id=456239208&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="main-info-section-preparation-slider-video main-info-section-preparation-slider-video-none" src="https://vk.com/video_ext.php?oid=-201733279&id=456239216&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="main-info-section-preparation-slider-video main-info-section-preparation-slider-video-none" src="https://vk.com/video_ext.php?oid=-201733279&id=456239228&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
                         <div class="main-info-section-task-slider-buttons">
                             <button class="button button-active button-slider-preparation">
 
@@ -187,7 +186,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="feedback">
                 <h2 class="subtitle">
                     Обратная связь
                 </h2>
@@ -269,44 +268,37 @@
                         ты сможешь вырасти профессионально и стать частью очень дружной
                         команды!
                     </p>
-                    <form class="form">
+                    <form class="form" method="post" action="#">
                         <div class="inputs">
                             <div class="input-form">
                                 <label class="text title-form" for="nameInput">Ваше имя:</label>
                                 <input placeholder="Иванов Иван Иванович" class="text text-input" type="text" id="nameInput" name="name">
                             </div>
-                            
                             <div class="input-form">
                                 <label class="text title-form" for="phoneInput">Номер телефона:</label>
                                 <input placeholder="+7 999 999 99 99" class="text text-input" type="tel" id="phoneInput" name="phone">
                             </div>
-                            
                             <div class="input-form">
                                 <label class="text title-form" for="serviceSelect">Служба в ВС РФ:</label>
-                                <select class="text text-input" id="serviceSelect" name="service">
+                                <select class="text text-input" id=serviceSelect name="service">
                                     <option value="service1">Служил срочную службу</option>
                                     <option value="service2">Служил по контракту</option>
                                     <option value="service3">Не служил</option>
                                 </select>
                             </div>
-                            
                             <div class="input-form-flag">
                                 <label class="text title-form">Ваш пол:</label>
                                 <div class="input-form-flag-chose">
                                     <label class="text text-input input-form-flag-chose-flag">
-                                        <input type="radio" name="gender" value="male">
-                                        М
+                                        <input type="radio" name="gender" value="male"> М
                                     </label>
                                     <label class="text text-input input-form-flag-chose-flag">
-                                        <input type="radio" name="gender" value="female">
-                                        Ж
+                                        <input type="radio" name="gender" value="female"> Ж
                                     </label>
-    
                                 </div>
-                            </div>    
+                            </div>
                         </div>
-                
-                        <button class="button button-form" type="submit">Отправить</button>
+                        <button type="submit" class="button button-form">Отправить</button>
                     </form>
                 </div>
             </section>
