@@ -1,47 +1,4 @@
-/* Стили для мобильных устройств */
 
-@media only screen and (max-width: 1200px) {
-    body {
-        width: fit-content;
-    }
-
-    .text {
-        font-size: 24px;
-    }
-
-    .container-nav {
-        gap: 20px;
-    }
-
-    .nav-links {
-        gap: 20px;
-    }
-
-    .title {
-        font-size: 72px;
-    }
-
-    .form {
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-
-    .button-form {
-        padding: 39px 510px;
-    }
-
-    .inputs {
-        gap: 0;
-    }
-
-    .container-footer {
-        gap: 184px;
-    }
-
-    .title-footer {
-        font-size: 50px;
-    }
-}
 
 /* Reset browser styles */
 * {
@@ -283,4 +240,47 @@ body {
     gap: 30px;
 }
 
+/* Стили для мобильных устройств */
 
+@media only screen and (max-width: 1200px) {
+    body {
+        width: fit-content;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .container-nav {
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 72px;
+    }
+
+    .form {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .button-form {
+        padding: 39px 510px;
+    }
+
+    .inputs {
+        gap: 0;
+    }
+
+    .container-footer {
+        gap: 184px;
+    }
+
+    .title-footer {
+        font-size: 50px;
+    }
+}
