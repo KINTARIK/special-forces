@@ -6,6 +6,7 @@
   }
   
 body {
+    width: 100%;
     font-family: 'Arsenal', sans-serif;
     font-style: normal;
   }
@@ -83,10 +84,10 @@ body {
 
 @keyframes movingBackground {
     0% {
-        background-position: 0 0; /* Изначальная позиция */
+        background-position: -200px 0; /* Изначальная позиция */
     }
     100% {
-        background-position: -100px 0; /* Конечная позиция (сдвиг на 100% горизонтально) */
+        background-position: -400px 0; /* Конечная позиция (сдвиг на 100% горизонтально) */
     }
 }
 
@@ -95,7 +96,6 @@ body {
     background: url('../img/Спецподразделение фон.png') repeat-x, #000000; /* Используем repeat-x для повторения горизонтально */
     animation: movingBackground 5s linear infinite;
     animation-direction: alternate; /* Применяем анимацию к фону */
-    background-size: cover;
 }
 
 .section {
@@ -236,4 +236,48 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 250%;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .container-nav {
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 72px;
+    }
+
+    .form {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .button-form {
+        padding: 39px 510px;
+    }
+
+    .inputs {
+        gap: 0;
+    }
+
+    .container-footer {
+        gap: 184px;
+    }
+
+    .title-footer {
+        font-size: 50px;
+    }
 }
