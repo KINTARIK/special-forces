@@ -241,7 +241,7 @@ body {
 /* Стили для мобильных устройств */
 @media only screen and (max-width: 1200px) {
     body {
-        width: 250%;
+        width: fit-content;
     }
 
     .text {
