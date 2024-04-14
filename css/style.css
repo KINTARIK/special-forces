@@ -180,7 +180,7 @@ body {
     flex-direction: column;
 }
 
-.form {
+form {
     display: flex;
     gap: 92px;
     border-radius: 30px;
